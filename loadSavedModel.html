@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+	<title>DIY TM</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- Import the webpage's stylesheet -->
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+<h1>Load Local Saved Models</h1>
+
+<p>
+    <br>
+    <p>Object 1 Name</p>
+    <input id="class1Name"></input>
+    <br>
+    <button class="dataCollector" data-1hot="0" data-name="Class 1">Gather Object 1 Data</button>
+    <br>
+</p>
+<p>
+    <br>
+    <p>Object 2 Name</p>
+    <input id="class2Name"></input>
+    <br>
+    <button class="dataCollector" data-1hot="1" data-name="Class 2">Gather Object 2 Data</button>
+    <br>
+</p>
+<p>
+    <br>
+    <button id="train">Train &amp; Predict!</button>
+    <br>
+</p>
+<p>
+    <br>
+    <button id="reset">Reset</button>
+    <br>
+</p>
+<p>
+    <br>
+    <p>Model Name</p>
+    <input id="modelName"></input>
+    <br>
+    <button id="saveModelLocally">Save Model Locally</button>
+</p>
+
+
+<!-- Import TensorFlow.js library -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0/dist/tf.min.js" type="text/javascript"></script>
+
+<!-- Import the page's JavaScript to do some stuff -->
+<script type="module" src="/trainNewModel.js"></script>
+
+</body>
+</html>
